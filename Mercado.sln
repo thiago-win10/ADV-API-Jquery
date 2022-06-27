@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercado.Entidades", "Meraco.Entidades\Mercado.Entidades.csproj", "{E2845442-7F7E-4D5C-BD06-ABA5F395DD87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercado.Infraestrutura", "Mercado.Infraestrutura\Mercado.Infraestrutura.csproj", "{945A64A8-4037-449C-A1B4-5805038D6FC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2845442-7F7E-4D5C-BD06-ABA5F395DD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2845442-7F7E-4D5C-BD06-ABA5F395DD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2845442-7F7E-4D5C-BD06-ABA5F395DD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2845442-7F7E-4D5C-BD06-ABA5F395DD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945A64A8-4037-449C-A1B4-5805038D6FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945A64A8-4037-449C-A1B4-5805038D6FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945A64A8-4037-449C-A1B4-5805038D6FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945A64A8-4037-449C-A1B4-5805038D6FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035CEEC7-F07F-4628-A6E4-D8CBB49CDEB7}
+	EndGlobalSection
+EndGlobal
