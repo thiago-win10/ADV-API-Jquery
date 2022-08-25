@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Mercado.Infraestrutura",
+    "\\Mercado.Infraestrutura\\Mapping",
+    "\\Mercado.Infraestrutura\\Repositorio",
+    "\\Testes",
+    "\\Testes\\RepositorioTeste"
+  ],
+  "SelectedNode": "\\Testes\\RepositorioTeste\\ClienteRepositorioTeste.cs",
+  "PreviewInSolutionExplorer": false
+}

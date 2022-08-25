@@ -4,7 +4,7 @@ namespace Mercado.Entidades.Models
 {
     public class Cliente
     {
-        public int ClienteId { get; set; }
+        public Guid ClienteId { get; set; }
         public string NomeCompleto { get; set; }
         public string Cpf { get; set; }
         public bool CartaoFidelidade { get; set; }
@@ -16,5 +16,6 @@ namespace Mercado.Entidades.Models
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public bool  Status { get; set; }
     }
 }
