@@ -1,4 +1,9 @@
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.AssemblyReference.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfoInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfo.cs
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.CoreCompileInputs.cache
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\testhost.dll
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\testhost.exe
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -142,11 +147,6 @@ C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\Mercado.E
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\Mercado.Infraestrutura.dll
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\Mercado.Entidades.pdb
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\Mercado.Infraestrutura.pdb
-C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.AssemblyReference.cache
-C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfoInputs.cache
-C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfo.cs
-C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.CoreCompileInputs.cache
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.CopyComplete
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.dll
 C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\ref\Testes.dll

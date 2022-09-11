@@ -9,14 +9,14 @@ namespace Mercado.Infraestrutura.Interface
 {
     public interface IBaseRepositorio<TEntity> : IDisposable where TEntity : class
     {
-        void Adicionar(TEntity entity);
+        Task<TEntity> Adicionar(TEntity entity);
 
-        TEntity ObterPorId(int id);
+        TEntity ObterPorId(Guid id);
 
         IEnumerable<TEntity> ObterTodos();
 
-        void Atualizar(int id);
+        Task<TEntity> Atualizar(TEntity entity);
 
-        void Remover(int id);
+        bool Remover(Guid id);
     }
 }

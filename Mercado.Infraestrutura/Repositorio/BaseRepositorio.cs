@@ -11,44 +11,49 @@ namespace Mercado.Infraestrutura.Repositorio
 {
     public class BaseRepositorio<TEntity> : IBaseRepositorio<TEntity> where TEntity : class
     {
-        protected readonly MercadoContext MercadoContext;
+        protected readonly MercadoContext _mercadoContext;
         public BaseRepositorio(MercadoContext mercadocontexto)
         {
-            MercadoContext = mercadocontexto;
+            _mercadoContext = mercadocontexto;
         }
-        public void Adicionar(TEntity entity)
+        public async Task<TEntity> Adicionar(TEntity entity)
         {
-            MercadoContext.Set<TEntity>().Add(entity);
-            MercadoContext.SaveChanges();
+            _mercadoContext.Set<TEntity>().Add(entity);
+            _mercadoContext.SaveChanges();
+            return entity;
         }
-        public void Atualizar(int id)
+        public TEntity ObterPorId(Guid Id)
         {
-
-            MercadoContext.Update(id);
-            MercadoContext.SaveChanges();
-        }
-        public TEntity ObterPorId(int Id)
-        {
-            return MercadoContext.Set<TEntity>().Find(Id);
+            return _mercadoContext.Set<TEntity>().Find(Id);
         }
 
         public IEnumerable<TEntity> ObterTodos()
 
         {
-            return MercadoContext.Set<TEntity>().ToList();
+            return _mercadoContext.Set<TEntity>().ToList();
         }
 
-        public void Remover(int id)
-        {
-
-            var obj = ObterPorId(id);
-            MercadoContext.Remove(obj);
-            MercadoContext.SaveChanges();
-
-        }
         public void Dispose()
         {
-            MercadoContext.Dispose();
+            _mercadoContext.Dispose();
+        }
+
+        public async Task<TEntity> Atualizar(TEntity entity)
+        {
+            _mercadoContext.Set<TEntity>().Update(entity);
+            _mercadoContext.SaveChanges();
+            return entity;
+        }
+
+        bool IBaseRepositorio<TEntity>.Remover(Guid id)
+        {
+            var obj = ObterPorId(id);
+            if (obj != null)
+            {
+                _mercadoContext.Remove(id);
+                _mercadoContext.SaveChanges();
+            }
+            return false;
         }
     }
 }

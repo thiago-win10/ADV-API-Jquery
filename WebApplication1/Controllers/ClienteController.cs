@@ -1,80 +1,114 @@
-﻿using Mercado.Entidades.Models;
-using Mercado.Service.Interface;
+﻿using AutoMapper;
+using MediatR;
+using Mercado.Application.Command;
+using Mercado.Application.Query;
+using Mercado.Entidades.Models;
+using Mercado.Entidades.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using log4net;
 
 namespace Mercado.Web.Controllers
 {
     public class ClienteController : ControllerBase
     {
-        private readonly IClienteService _clienteService;
+        private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
+        private readonly ILog _log;
 
-        public ClienteController(IClienteService clienteService)
+
+
+        public ClienteController(IMediator mediator, IMapper mapper, ILog log)
         {
-            _clienteService = clienteService;
+            _mediator = mediator;
+            _mapper = mapper;
+            _log = log;
         }
+
         [HttpGet]
-        public IActionResult ObterTodos()
+        public async Task<IActionResult>ObterTodos()
         {
+           
             try
             {
-                return Ok(_clienteService.ObterTodos());
+                return Ok(await _mediator.Send(new ObterTodosClienteQuery()));
+                _log.Info("Client obtained");
+
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.ToString());
+                return BadRequest(ex.Message);
+                _log.Error("Fail , Clients don´t obtained");
+
             }
         }
         [HttpGet]
-        public IActionResult ObterPorId(int id)
+        public async Task<IActionResult> ObterPorId(Guid id)
         {
             try
             {
-                return Ok(_clienteService.ObterPorId(id));
+                return Ok(await _mediator.Send(new ObterPorIdClienteQuery  { ClienteId = id }));
+                _log.Info("Client GetById");
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.ToString());
+                return BadRequest(ex.Message);
+                _log.Error("Fail , Client don´t obtained");
+
             }
         }
         [HttpPut]
-        public void Atualizar(int id)
+        public async Task<IActionResult>Atualizar(Guid id, AtualizarClienteCommand atualizarClienteCommand)
         {
             try
             {
-                _clienteService.Atualizar(id);
+                atualizarClienteCommand.ClienteId = id;
+                return Ok(await _mediator.Send(atualizarClienteCommand));
+                _log.Info("Client Updated");
+
             }
             catch (Exception ex)
             {
-                BadRequest(ex.ToString());
+                return BadRequest(ex.Message);
+                _log.Error("Fail , Client don´t uptadeted");
+
             }
         }
         [HttpPost]
-        public void Adicionar(Cliente cliente)
+        public async Task<IActionResult> Adicionar(Cliente cliente)
         {
-            try
-            {
-                _clienteService.Adicionar(cliente);
+            try { 
+
+                return Ok(await _mediator.Send(cliente));
+                _log.Info("Client Add");
+
             }
             catch (Exception ex)
             {
-                BadRequest(ex.ToString());
+                return BadRequest(ex.Message);
+                _log.Error("Fail , Client don´t Add");
+
             }
         }
         [HttpDelete]
-        public void Remover(int id)
+        public async Task<IActionResult> Remover(Guid id)
         {
             try
             {
-                _clienteService.Remover(id);
+                return Ok(await _mediator.Send(new RemoverClienteCommand { ClienteId = id }));
+                _log.Info("Client Removed");
+
             }
             catch (Exception ex)
             {
-                BadRequest(ex.ToString());
+                return BadRequest(ex.Message);
+                _log.Error("Fail , Client don´t Removed");
+
             }
         }
     }

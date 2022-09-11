@@ -43,12 +43,12 @@ namespace Mercado.Infraestrutura.Context
             base.OnModelCreating(modelBuilder);
 
 
-            modelBuilder.ApplyConfiguration(new EmpresaMercadoMap());
-            modelBuilder.ApplyConfiguration(new FuncionarioMap());
-            modelBuilder.ApplyConfiguration(new CategoriaMap());
-            modelBuilder.ApplyConfiguration(new ClienteMap());
-            modelBuilder.ApplyConfiguration(new FornecedorMap());
-            modelBuilder.ApplyConfiguration(new ProdutoMap());
+            modelBuilder.ApplyConfiguration(new EmpresaMercadoConfiguration());
+            modelBuilder.ApplyConfiguration(new FuncionarioConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoriaConfiguration());
+            modelBuilder.ApplyConfiguration(new ClienteConfiguration());
+            modelBuilder.ApplyConfiguration(new FornecedorConfiguration());
+            modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
             
         }
 

@@ -1,12 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Meraco.Entidades",
+    "\\Meraco.Entidades\\ViewModels",
     "\\Mercado.Infraestrutura",
-    "\\Mercado.Infraestrutura\\Mapping",
     "\\Mercado.Infraestrutura\\Repositorio",
+    "\\Mercado.Service",
+    "\\Mercado.Service\\QueryHandler",
     "\\Testes",
-    "\\Testes\\RepositorioTeste"
+    "\\Testes\\RepositorioTeste",
+    "\\WebApplication1",
+    "\\WebApplication1\\Controllers"
   ],
-  "SelectedNode": "\\Testes\\RepositorioTeste\\ClienteRepositorioTeste.cs",
+  "SelectedNode": "\\WebApplication1\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

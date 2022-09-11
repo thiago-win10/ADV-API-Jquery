@@ -80,5 +80,3 @@ namespace Mercado.Web.Controllers
     }
 }
 
-    }
-}

@@ -1,0 +1,6 @@
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.csproj.AssemblyReference.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.AssemblyInfoInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.AssemblyInfo.cs
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.csproj.CoreCompileInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\WebApplication1\obj\Debug\net5.0\Mercado.Web.MvcApplicationPartsAssemblyInfo.cache

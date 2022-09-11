@@ -4,10 +4,15 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using Mercado.Infraestrutura.Context;
 
 namespace WebApplication1
 {
@@ -19,16 +24,35 @@ namespace WebApplication1
         }
 
         public IConfiguration Configuration { get; }
+        private readonly IWebHostEnvironment _env;
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddRazorPages();
-        }
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mercado-Api", Description = "Projeto Mercado-Api", Version = "v1" });
+            });
+            services.AddMediatR(typeof(Startup).Assembly);
+
+            services.AddDbContext<MercadoContext>(options =>
+            {
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("MercadoApi"));
+                if (_env.IsDevelopment())
+                    options.EnableSensitiveDataLogging();
+
+            });
+    }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -36,11 +60,25 @@ namespace WebApplication1
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+
                 app.UseHsts();
             }
+            app.UseCors(configurePolicy =>
+            {
+                configurePolicy.AllowAnyOrigin();
+                configurePolicy.AllowAnyMethod();
+                configurePolicy.AllowAnyHeader();
+            });
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CQRS API v1");
+            });
+
             app.UseStaticFiles();
 
             app.UseRouting();

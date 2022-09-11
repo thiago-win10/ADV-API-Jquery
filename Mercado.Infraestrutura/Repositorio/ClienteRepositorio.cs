@@ -15,10 +15,5 @@ namespace Mercado.Infraestrutura.Repositorio
         {
 
         }
-
-        public void Atualizar(Cliente cliente)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

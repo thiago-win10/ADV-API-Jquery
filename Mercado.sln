@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Entidades", "Meraco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Infraestrutura", "Mercado.Infraestrutura\Mercado.Infraestrutura.csproj", "{945A64A8-4037-449C-A1B4-5805038D6FC5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Service", "Mercado.Service\Mercado.Service.csproj", "{C1A2754E-DD02-4738-866E-674B2901777C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Application", "Mercado.Service\Mercado.Application.csproj", "{C1A2754E-DD02-4738-866E-674B2901777C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testes", "Testes\Testes.csproj", "{CE01E2B5-DF1A-4A3B-878C-69FDBF74721A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercado.Web", "WebApplication1\Mercado.Web.csproj", "{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Web", "WebApplication1\Mercado.Web.csproj", "{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

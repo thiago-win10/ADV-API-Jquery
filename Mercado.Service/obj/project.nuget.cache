@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "h91Y5ZMZ5XB/dPzRT8s4+MS2BNoGH82BZw94QG1fMea7LdNsoo88paW6Ggc73MPVLrzlicy9YK7OxZMlaQ6Jfw==",
+  "dgSpecHash": "DJLyuDaET/wzCtXnURhaVGV2yxYWpQCl5UBjq7tZn2LlUS9p0GNvusqqEa8F/edhX2KbXsj96HwRq7tgjBe8iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Service.csproj",
+  "projectFilePath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nerif\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\fluentvalidation\\11.0.3\\fluentvalidation.11.0.3.nupkg.sha512",
-    "C:\\Users\\nerif\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\nerif\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\nerif\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\nerif\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
