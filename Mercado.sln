@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testes", "Testes\Testes.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mercado.Web", "WebApplication1\Mercado.Web.csproj", "{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercado.DomainCore", "Mercado.DomainCore\Mercado.DomainCore.csproj", "{530294A0-D111-44B2-8AC1-6D49E43A9CA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D07B3B-45BC-4183-A79A-BEB7DB1D6FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530294A0-D111-44B2-8AC1-6D49E43A9CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530294A0-D111-44B2-8AC1-6D49E43A9CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530294A0-D111-44B2-8AC1-6D49E43A9CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530294A0-D111-44B2-8AC1-6D49E43A9CA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

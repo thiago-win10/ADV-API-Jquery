@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="Moq" Version="4.18.2" />
@@ -18,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Meraco.Entidades\Mercado.Entidades.csproj" />
     <ProjectReference Include="..\Mercado.Infraestrutura\Mercado.Infraestrutura.csproj" />
+    <ProjectReference Include="..\Mercado.Service\Mercado.Application.csproj" />
   </ItemGroup>
 
 </Project>

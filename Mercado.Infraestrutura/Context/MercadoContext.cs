@@ -11,7 +11,6 @@ namespace Mercado.Infraestrutura.Context
         }
         public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<EmpresaMercado> Mercados { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
@@ -26,12 +25,6 @@ namespace Mercado.Infraestrutura.Context
             }
         }
 
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
-        //    builder.Entity<ApplicationUser>().ToTable("AspNetUsers").HasKey(x => x.Id);
-        //    base.OnModelCreating(builder);
-        //}
-
         public string ObterStringConexao()
         {
             string conn = "Data Source=DESKTOP-H6JQJL4;Initial Catalog=Mercado;Integrated Security=True";
@@ -43,7 +36,6 @@ namespace Mercado.Infraestrutura.Context
             base.OnModelCreating(modelBuilder);
 
 
-            modelBuilder.ApplyConfiguration(new EmpresaMercadoConfiguration());
             modelBuilder.ApplyConfiguration(new FuncionarioConfiguration());
             modelBuilder.ApplyConfiguration(new CategoriaConfiguration());
             modelBuilder.ApplyConfiguration(new ClienteConfiguration());

@@ -27,6 +27,70 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj": {
+                "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj",
+        "projectName": "Mercado.DomainCore",
+        "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj",
+        "packagesPath": "C:\\Users\\nerif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nerif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -39,6 +103,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -146,6 +216,80 @@
         }
       }
     },
+    "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj",
+        "projectName": "Mercado.Application",
+        "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj",
+        "packagesPath": "C:\\Users\\nerif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nerif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Meraco.Entidades\\Mercado.Entidades.csproj": {
+                "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Meraco.Entidades\\Mercado.Entidades.csproj"
+              },
+              "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj": {
+                "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.DomainCore\\Mercado.DomainCore.csproj"
+              },
+              "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj": {
+                "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Testes\\Testes.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -175,6 +319,9 @@
               },
               "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj": {
                 "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj"
+              },
+              "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj": {
+                "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj"
               }
             }
           }
@@ -189,6 +336,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.2.3, )"

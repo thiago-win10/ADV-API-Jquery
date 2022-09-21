@@ -85,7 +85,7 @@ namespace Mercado.Web.Controllers
             try { 
 
                 return Ok(await _mediator.Send(cliente));
-                _log.Info("Client Add");
+                _log.Info("Client Added");
 
             }
             catch (Exception ex)

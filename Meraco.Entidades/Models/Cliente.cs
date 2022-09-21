@@ -8,6 +8,7 @@ namespace Mercado.Entidades.Models
         public string NomeCompleto { get; set; }
         public string Cpf { get; set; }
         public bool CartaoFidelidade { get; set; }
+        public DateTime Datanascimento { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
         public string Cep { get; set; }
@@ -16,6 +17,5 @@ namespace Mercado.Entidades.Models
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
-        public bool  Status { get; set; }
     }
 }
