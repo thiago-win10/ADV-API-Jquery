@@ -1,12 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
-using Mercado.Entidades.Models;
 using Mercado.Entidades.ViewModels;
 using Mercado.Infraestrutura.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,7 +13,7 @@ namespace Mercado.Application.Query
         private readonly IClienteRepositorio _iclienteRepositorio;
         private readonly IMapper _mapper;
 
-        public ObterPorIdClienteQueryHandler(IClienteRepositorio iclienteRepositorio , IMapper mapper)
+        public ObterPorIdClienteQueryHandler(IClienteRepositorio iclienteRepositorio, IMapper mapper)
         {
             _iclienteRepositorio = iclienteRepositorio;
             _mapper = mapper;
@@ -30,7 +25,7 @@ namespace Mercado.Application.Query
             return await Task.FromResult(mapProduct);
 
 
-       
+
         }
     }
 }

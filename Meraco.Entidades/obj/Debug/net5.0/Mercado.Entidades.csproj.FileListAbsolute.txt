@@ -1,0 +1,14 @@
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.deps.json
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.dll
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\ref\Mercado.Entidades.dll
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.pdb
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\Mercado.DomainCore.dll
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\bin\Debug\net5.0\Mercado.DomainCore.pdb
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.csproj.AssemblyReference.cache
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.AssemblyInfoInputs.cache
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.AssemblyInfo.cs
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.dll
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\ref\Mercado.Entidades.dll
+C:\Users\Thiago\source\repos\Mercado\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.pdb

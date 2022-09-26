@@ -1,0 +1,12 @@
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\bin\Debug\net5.0\Mercado.DomainCore.deps.json
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\bin\Debug\net5.0\Mercado.DomainCore.dll
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\bin\Debug\net5.0\ref\Mercado.DomainCore.dll
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\bin\Debug\net5.0\Mercado.DomainCore.pdb
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.csproj.AssemblyReference.cache
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.AssemblyInfoInputs.cache
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.AssemblyInfo.cs
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.dll
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\ref\Mercado.DomainCore.dll
+C:\Users\Thiago\source\repos\Mercado\Mercado.DomainCore\obj\Debug\net5.0\Mercado.DomainCore.pdb

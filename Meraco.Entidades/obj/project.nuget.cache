@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "evncrcSzeY27QeQS2+7QbMWkI2XowMjF9KaSw++l1ji6agLxEl0NhZugr51hMO2llsOuw4pzJOcFrH0qlU7sSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Meraco.Entidades\\Mercado.Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thiago\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Thiago\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Thiago\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
+    "C:\\Users\\Thiago\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Thiago\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Thiago\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

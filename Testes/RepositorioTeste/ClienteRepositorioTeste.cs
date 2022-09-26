@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using Mercado.Application.Command;
-using Mercado.Entidades.Events;
 using Mercado.Entidades.Models;
 using Mercado.Entidades.ViewModels;
 using Mercado.Infraestrutura.Context;
@@ -10,10 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Testes.RepositorioTeste
 {
@@ -24,11 +18,11 @@ namespace Testes.RepositorioTeste
         {
             var mockSet = new Mock<DbSet<Cliente>>();
 
-        var mockContext = new Mock<MercadoContext>();
+            var mockContext = new Mock<MercadoContext>();
             mockContext.Setup(m => m.Clientes).Returns(mockSet.Object);
 
             var repositorio = new ClienteRepositorio(mockContext.Object);
-            repositorio.Atualizar(new Cliente() { NomeCompleto = "Livro de teste"});
+            repositorio.Atualizar(new Cliente() { NomeCompleto = "Livro de teste" });
 
             var cliente = new Cliente();
 
@@ -41,7 +35,7 @@ namespace Testes.RepositorioTeste
                 ClienteId = cliente.ClienteId,
                 NomeCompleto = cliente.NomeCompleto,
                 Email = cliente.Email,
-                Datanascimento = cliente.Datanascimento,
+                DataNascimento = cliente.DataNascimento,
             });
 
 
@@ -60,8 +54,8 @@ namespace Testes.RepositorioTeste
             mockContext.Setup(m => m.Clientes).Returns(mockSet.Object);
 
             var repositorio = new ClienteRepositorio(mockContext.Object);
-            repositorio.Adicionar(new Cliente() { NomeCompleto = "Livro A",Cpf = "42472501822" , Cep ="05791000"});
-
+            repositorio.Adicionar(new Cliente() { NomeCompleto = "Livro A", Cpf = "42472501822"});
+            
             mockSet.Verify(m => m.Add(It.IsAny<Cliente>()), Times.Once());
             mockContext.Verify(m => m.SaveChanges(), Times.Once());
 

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using MediatR;
 
 
 namespace Mercado.Entidades.Events
@@ -16,22 +12,22 @@ namespace Mercado.Entidades.Events
     {
 
 
-    public Task Handle(ClienteUpdatedEvent message, CancellationToken cancellationToken)
-    {
+        public Task Handle(ClienteUpdatedEvent message, CancellationToken cancellationToken)
+        {
 
-        return Task.CompletedTask;
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(ClienteRegisteredEvent message, CancellationToken cancellationToken)
+        {
+
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(ClienteRemovedEvent message, CancellationToken cancellationToken)
+        {
+
+            return Task.CompletedTask;
+        }
     }
-
-    public Task Handle(ClienteRegisteredEvent message, CancellationToken cancellationToken)
-    {
-
-        return Task.CompletedTask;
-    }
-
-    public Task Handle(ClienteRemovedEvent message, CancellationToken cancellationToken)
-    {
-
-        return Task.CompletedTask;
-    }
-}
 }

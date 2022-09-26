@@ -1,20 +1,14 @@
+using FluentValidation.AspNetCore;
+using MediatR;
+using Mercado.Infraestrutura.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MediatR;
 using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
-using Mercado.Infraestrutura.Context;
-using Mercado.Entidades.Events;
-using FluentValidation.AspNetCore;
+using Microsoft.OpenApi.Models;
 
 namespace WebApplication1
 {
@@ -59,11 +53,11 @@ namespace WebApplication1
 
             });
 
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
 
             if (env.IsDevelopment())
