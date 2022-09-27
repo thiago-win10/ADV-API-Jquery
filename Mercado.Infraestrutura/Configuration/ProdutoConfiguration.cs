@@ -31,9 +31,12 @@ namespace Mercado.Infraestrutura.Mapping
                 .HasColumnType("int");
 
             //Relacionamento
-            //builder.HasMany(x => x.EnderecoClientePessoaFisicas)
-            //    .WithOne(x => x.ClientePessoaFisica).HasForeignKey(c => c.EnderecoClientePessoaFisicaId)
-            //    .OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(x => x.Fornecedores)
+                .WithOne(c => c.Produto)
+                .HasForeignKey(c => c.FornecedorProdutoId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+
 
         }
     }

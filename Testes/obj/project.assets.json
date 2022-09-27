@@ -2608,7 +2608,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "FluentValidation": "11.0.3",
+          "FluentValidation": "11.2.1",
           "Mercado.Entidades": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.9",
@@ -8897,19 +8897,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nerif\\.nuget\\packages\\": {}
+    "C:\\Users\\Thiago\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Testes\\Testes.csproj",
+      "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Testes\\Testes.csproj",
       "projectName": "Testes",
-      "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Testes\\Testes.csproj",
-      "packagesPath": "C:\\Users\\nerif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Testes\\obj\\",
+      "projectPath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Testes\\Testes.csproj",
+      "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Testes\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nerif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8923,14 +8928,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Meraco.Entidades\\Mercado.Entidades.csproj": {
-              "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Meraco.Entidades\\Mercado.Entidades.csproj"
+            "C:\\Users\\Thiago\\source\\repos\\Mercado\\Meraco.Entidades\\Mercado.Entidades.csproj": {
+              "projectPath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Meraco.Entidades\\Mercado.Entidades.csproj"
             },
-            "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj": {
-              "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj"
+            "C:\\Users\\Thiago\\source\\repos\\Mercado\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj": {
+              "projectPath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj"
             },
-            "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj": {
-              "projectPath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj"
+            "C:\\Users\\Thiago\\source\\repos\\Mercado\\Mercado.Service\\Mercado.Application.csproj": {
+              "projectPath": "C:\\Users\\Thiago\\source\\repos\\Mercado\\Mercado.Service\\Mercado.Application.csproj"
             }
           }
         }
@@ -8989,7 +8994,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

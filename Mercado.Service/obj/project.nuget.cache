@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CIVVgh/uGilDMG5AydWuuxXSOHIxvbDlARIIXDfiXvnCOGzg4N0lhfo0leapQCeMw0an7H3emb3r2Jad3wpbGg==",
+  "dgSpecHash": "Eo8V9UOw3qw8nxVYfWxC5lOBOC5rcjyLZ3RddHWpC7Uh8SSls7PIqsP3Pu7Dquq72HolBRuYeIU0Plf9M6grFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\Mercado.Application.csproj",
   "expectedPackageFiles": [
@@ -105,5 +105,12 @@
     "C:\\Users\\nerif\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Service\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

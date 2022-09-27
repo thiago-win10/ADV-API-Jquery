@@ -1,15 +1,14 @@
 ﻿using AutoMapper;
 using MediatR;
+<<<<<<< HEAD
 using Mercado.Application.CommandHandler;
 using Mercado.DomainCore.Bus;
 using Mercado.DomainCore.Notifications;
 using Mercado.Entidades.Events;
 using Mercado.Entidades.Models;
+=======
+>>>>>>> 21313b52a2f5b3bcfce19be3bc189f69fb8c6e3a
 using Mercado.Infraestrutura.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 namespace Mercado.Application.Command
@@ -20,6 +19,7 @@ namespace Mercado.Application.Command
         private readonly IMapper _mapper;
         private readonly IMediatorHandler Bus;
 
+<<<<<<< HEAD
 
         public RemoverClienteCommandHandler(IClienteRepositorio iclienteRepositorio, IMapper mapper,
             IUnitOfWork uow,
@@ -29,6 +29,12 @@ namespace Mercado.Application.Command
         _iclienteRepositorio = iclienteRepositorio;
         _mapper = mapper;
 
+=======
+        public RemoverClienteCommandHandler(IClienteRepositorio iclienteRepositorio, IMapper mapper)
+        {
+            _iclienteRepositorio = iclienteRepositorio;
+            _mapper = mapper;
+>>>>>>> 21313b52a2f5b3bcfce19be3bc189f69fb8c6e3a
         }
 
         public Task<bool> Handle(RemoverClienteCommand request, CancellationToken cancellationToken)

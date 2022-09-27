@@ -1,12 +1,8 @@
 ﻿using AutoMapper;
 using MediatR;
-using Mercado.Entidades.Models;
 using Mercado.Entidades.ViewModels;
 using Mercado.Infraestrutura.Interface;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -27,7 +23,7 @@ namespace Mercado.Application.Query
         {
             var clientelist = _iclienteRepositorio.ObterTodos();
             var mapclienteList = _mapper.Map<List<ClienteViewModel>>(clientelist);
-            return Task.FromResult(mapclienteList);            
+            return Task.FromResult(mapclienteList);
         }
     }
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/pU+G7M2vX4vPikEeDFw5CTtQroPM/UzSlz3eiOLYJnCcN5vF7XDGDIUoetA3e/ekOjrESSMcG4U0q7jcM9OvQ==",
-  "success": false,
+  "dgSpecHash": "mhTPVpIjH0rcvos67QvbMBhM3OKhL4Y4DAQEAK8+0s0lqQ1I81/50kt9IBq5Bs1aC01qVWTVQ9cvGLeixpjlPQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\Mercado.Infraestrutura.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nerif\\.nuget\\packages\\fluentvalidation\\11.0.3\\fluentvalidation.11.0.3.nupkg.sha512",
+    "C:\\Users\\nerif\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\nerif\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -109,13 +109,10 @@
   ],
   "logs": [
     {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Downgrade de pacote detectado: FluentValidation de 11.2.1 para 11.0.3. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Mercado.Infraestrutura -> Mercado.Entidades -> FluentValidation.AspNetCore 11.2.2 -> FluentValidation (>= 11.2.1) \r\n Mercado.Infraestrutura -> FluentValidation (>= 11.0.3)",
-      "libraryId": "FluentValidation",
-      "targetGraphs": [
-        "net5.0"
-      ]
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\nerif\\source\\repos\\Mercado-API-Jquery\\Mercado.Infraestrutura\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

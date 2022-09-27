@@ -1,17 +1,12 @@
 ﻿using AutoMapper;
+using log4net;
 using MediatR;
 using Mercado.Application.Command;
 using Mercado.Application.Query;
 using Mercado.Entidades.Models;
-using Mercado.Entidades.ViewModels;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using log4net;
 
 namespace Mercado.Web.Controllers
 {
@@ -31,9 +26,9 @@ namespace Mercado.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult>ObterTodos()
+        public async Task<IActionResult> ObterTodos()
         {
-           
+
             try
             {
                 return Ok(await _mediator.Send(new ObterTodosClienteQuery()));
@@ -52,7 +47,7 @@ namespace Mercado.Web.Controllers
         {
             try
             {
-                return Ok(await _mediator.Send(new ObterPorIdClienteQuery  { ClienteId = id }));
+                return Ok(await _mediator.Send(new ObterPorIdClienteQuery { ClienteId = id }));
                 _log.Info("Client GetById");
             }
             catch (Exception ex)
@@ -63,7 +58,7 @@ namespace Mercado.Web.Controllers
             }
         }
         [HttpPut]
-        public async Task<IActionResult>Atualizar(Guid id, AtualizarClienteCommand atualizarClienteCommand)
+        public async Task<IActionResult> Atualizar(Guid id, AtualizarClienteCommand atualizarClienteCommand)
         {
             try
             {
@@ -82,7 +77,8 @@ namespace Mercado.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Adicionar(Cliente cliente)
         {
-            try { 
+            try
+            {
 
                 return Ok(await _mediator.Send(cliente));
                 _log.Info("Client Added");
