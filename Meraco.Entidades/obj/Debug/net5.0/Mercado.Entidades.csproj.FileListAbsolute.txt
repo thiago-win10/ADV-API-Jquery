@@ -1,0 +1,15 @@
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.deps.json
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.dll
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\ref\Mercado.Entidades.dll
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\Mercado.Entidades.pdb
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\Mercado.DomainCore.dll
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\bin\Debug\net5.0\Mercado.DomainCore.pdb
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.csproj.AssemblyReference.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.AssemblyInfoInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.AssemblyInfo.cs
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.csproj.CopyComplete
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.dll
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\ref\Mercado.Entidades.dll
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Meraco.Entidades\obj\Debug\net5.0\Mercado.Entidades.pdb

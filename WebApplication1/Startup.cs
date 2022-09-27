@@ -15,6 +15,15 @@ using Microsoft.EntityFrameworkCore;
 using Mercado.Infraestrutura.Context;
 using Mercado.Entidades.Events;
 using FluentValidation.AspNetCore;
+using Mercado.DomainCore.Bus;
+using Mercado.Infraestrutura.Bus;
+using Mercado.DomainCore.Notifications;
+using Mercado.Application.Command;
+using Mercado.Entidades.ViewModels;
+using Mercado.Infraestrutura.Interface;
+using Mercado.Infraestrutura.Repositorio;
+using Mercado.Infraestrutura.UnitOfWork;
+using Mercado.DomainCore.Events;
 
 namespace WebApplication1
 {
@@ -58,8 +67,26 @@ namespace WebApplication1
                     options.EnableSensitiveDataLogging();
 
             });
+            services.AddScoped<IMediatorHandler, InMemoryBus>();
 
-            
+            // Domain - Events
+            services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+            services.AddScoped<INotificationHandler<ClienteRegisteredEvent>, ClienteEventHandler>();
+            services.AddScoped<INotificationHandler<ClienteUpdatedEvent>, ClienteEventHandler>();
+            services.AddScoped<INotificationHandler<ClienteRemovedEvent>, ClienteEventHandler>();
+
+
+            services.AddScoped<IRequestHandler<AdicionarClienteCommand, ClienteViewModel>, AdicionarClienteCommandHandler>();
+            services.AddScoped<IRequestHandler<AtualizarClienteCommand, ClienteViewModel>, AtualizarClienteCommandHandler>();
+            services.AddScoped<IRequestHandler<RemoverClienteCommand, bool>, RemoverClienteCommandHandler>();
+
+            services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            // Infra - Data EventSourcing
+            services.AddScoped<IEventStoreRepository, EventStoreSqlRepository>();
+            services.AddScoped<IEventStore, SqlEventStore>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,6 @@
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.AssemblyReference.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfoInputs.cache
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.AssemblyInfo.cs
+C:\Users\nerif\source\repos\Mercado-API-Jquery\Testes\obj\Debug\net5.0\Testes.csproj.CoreCompileInputs.cache

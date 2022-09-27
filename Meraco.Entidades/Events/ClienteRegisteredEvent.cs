@@ -10,7 +10,7 @@ namespace Mercado.Entidades.Events
     public class ClienteRegisteredEvent : Event
     {
 
-        public ClienteRegisteredEvent(Guid id, string name, string email, DateTime datanasc, string cep)
+        public ClienteRegisteredEvent(Guid id,string name, string email, DateTime datanasc, string cep)
         {
             ClienteId = id;
             NomeCompleto = name;

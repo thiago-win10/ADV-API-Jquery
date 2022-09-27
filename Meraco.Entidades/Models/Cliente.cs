@@ -4,6 +4,18 @@ namespace Mercado.Entidades.Models
 {
     public class Cliente
     {
+        private Guid guid;
+
+        public Cliente(Guid guid, string nomeCompleto, Guid clienteId, string email, DateTime datanascimento, string cep)
+        {
+            this.guid = guid;
+            NomeCompleto = nomeCompleto;
+            ClienteId = clienteId;
+            Email = email;
+            Datanascimento = datanascimento;
+            Cep = cep;
+        }
+
         public Guid ClienteId { get; set; }
         public string NomeCompleto { get; set; }
         public string Cpf { get; set; }
