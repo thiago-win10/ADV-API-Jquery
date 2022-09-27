@@ -24,8 +24,6 @@ namespace Mercado.Application.Query
             var mapProduct = _mapper.Map<ClienteViewModel>(cliente);
             return await Task.FromResult(mapProduct);
 
-
-
         }
     }
 }

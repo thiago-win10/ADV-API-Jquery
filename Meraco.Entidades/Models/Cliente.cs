@@ -12,7 +12,7 @@ namespace Mercado.Entidades.Models
             NomeCompleto = nomeCompleto;
             ClienteId = clienteId;
             Email = email;
-            Datanascimento = datanascimento;
+            DataNascimento = datanascimento;
             Cep = cep;
         }
 
@@ -25,6 +25,7 @@ namespace Mercado.Entidades.Models
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
         public ClienteEndereco ClienteEndereco { get; set; }
+        public string Cep { get; set; }
 
     }
 }

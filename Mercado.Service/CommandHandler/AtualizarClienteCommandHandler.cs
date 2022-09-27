@@ -7,6 +7,7 @@ using Mercado.Entidades.Events;
 using Mercado.Entidades.Models;
 using Mercado.Entidades.ViewModels;
 using Mercado.Infraestrutura.Interface;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -35,11 +36,11 @@ namespace Mercado.Application.Command
             var mapcliente = _mapper.Map<ClienteViewModel>(cliente);
 
             var customer = new Cliente(Guid.NewGuid(), mapClienteRequest.NomeCompleto, mapClienteRequest.ClienteId,
-             mapClienteRequest.Email, mapClienteRequest.Datanascimento, mapClienteRequest.Cep);
+             mapClienteRequest.Email, mapClienteRequest.DataNascimento, mapClienteRequest.Cep);
 
             if (Commit())
             {
-                Bus.RaiseEvent(new ClienteUpdatedEvent(customer.ClienteId, customer.NomeCompleto, customer.Email, customer.Datanascimento, customer.Cep));
+                Bus.RaiseEvent(new ClienteUpdatedEvent(customer.ClienteId, customer.NomeCompleto, customer.Email, customer.DataNascimento, customer.Cep));
             }
             return Task.FromResult(mapcliente);
         }

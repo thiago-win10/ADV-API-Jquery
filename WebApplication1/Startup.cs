@@ -8,9 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-<<<<<<< HEAD
-using Microsoft.EntityFrameworkCore;
-using Mercado.Infraestrutura.Context;
 using Mercado.Entidades.Events;
 using FluentValidation.AspNetCore;
 using Mercado.DomainCore.Bus;
@@ -22,10 +19,9 @@ using Mercado.Infraestrutura.Interface;
 using Mercado.Infraestrutura.Repositorio;
 using Mercado.Infraestrutura.UnitOfWork;
 using Mercado.DomainCore.Events;
-=======
+using Mercado.Infraestrutura.EventSourcingSql;
 using Microsoft.OpenApi.Models;
->>>>>>> 21313b52a2f5b3bcfce19be3bc189f69fb8c6e3a
-
+using Microsoft.OpenApi.Models;
 namespace WebApplication1
 {
     public class Startup
@@ -88,10 +84,6 @@ namespace WebApplication1
             services.AddScoped<IEventStoreRepository, EventStoreSqlRepository>();
             services.AddScoped<IEventStore, SqlEventStore>();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 21313b52a2f5b3bcfce19be3bc189f69fb8c6e3a
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
