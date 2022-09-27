@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mercado.DomainCore",
-    "\\Mercado.DomainCore\\Notifications",
+    "\\Meraco.Entidades",
+    "\\Meraco.Entidades\\ViewModels",
     "\\Mercado.Service",
     "\\Mercado.Service\\CommandHandler",
     "\\Mercado.Service\\EventSourced",
@@ -11,6 +11,6 @@
     "\\WebApplication1",
     "\\WebApplication1\\Controllers"
   ],
-  "SelectedNode": "\\WebApplication1\\Startup.cs",
+  "SelectedNode": "\\Meraco.Entidades\\ViewModels\\FuncionarioViewModel.cs",
   "PreviewInSolutionExplorer": false
 }
